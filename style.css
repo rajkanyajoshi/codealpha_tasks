@@ -1,82 +1,88 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    font-family: Arial, sans-serif;
-}
-
-.calculator {
-    background: #222;
-    padding: 22px;
-    border-radius: 15px;
-    width: 280px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-#display {
-    width: 100%;
-    height: 55px;
-    margin-bottom: 18px;
-    font-size: 22px;
-
-    /* Text behavior */
-    text-align: right;
-    line-height: 55px;
-
-    /* Balanced spacing */
-    padding: 0 15px;
-
-    border: none;
-    border-radius: 8px;
-    background: #e9ecef;
-    color: #2d3436;
-
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6fa;
+    color: #2f3640;
+    line-height: 1.6;
 }
-button {
-    padding: 15px;
+
+/* Header */
+header {
+    background: #273c75;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 10px;
     font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
 }
 
-button:hover {
-    background: #ddd;
-}
-.equal {
-    grid-column: span 3;
-    background: #ffa502;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+/* Sections */
+section {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.equal:hover {
-    background: #e69500;
-}
-.operator {
-    background: #ff7675;
-    color: white;
-    font-weight: bold;
+section h2 {
+    margin-bottom: 15px;
+    color: #273c75;
 }
 
-.operator:hover {
-    background: #e17055;
+/* Skills */
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.zero {
-    grid-column: span 2;
+#skills li {
+    background: #dcdde1;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
 }
 
-button {
-    background: #f1f2f6;
+/* Projects */
+/* Projects layout fix */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project h3 {
+    margin-bottom: 10px;
+    color: #273c75;
+}
+
+/* Contact */
+#contact p {
+    margin: 5px 0;
 }

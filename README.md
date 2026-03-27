@@ -1,2 +1,2 @@
-# CodeAlpha_Calculator
-Calculator project for CodeAlpha Frontend Internship
+# CodeAlpha_Portfolio
+Personal portfolio website built as part of CodeAlpha Frontend Internship
